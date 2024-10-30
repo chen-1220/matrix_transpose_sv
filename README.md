@@ -14,9 +14,9 @@ ram_interface.sv：接口定义文件
 
 实现框图：
 
-<img src="README.assets/%E5%9F%BA%E4%BA%8ERAM%E5%AE%9E%E7%8E%B0%E7%9F%A9%E9%98%B5%E8%BD%AC%E7%BD%AE%E7%9A%84%E6%A1%86%E5%9B%BE.png" alt="基于RAM实现矩阵转置的框图" style="zoom:60%;" />
+<img src="./doc/基于RAM实现矩阵转置的框图.png" alt="基于RAM实现矩阵转置的框图" style="zoom:60%;" />
 
 Modelsim仿真图：
 
-<img src="README.assets/modelsim_result.png" alt="modelsim_resultl" style="zoom:75%;" />
+<img src="./doc/modelsim_result.png" alt="modelsim_resultl" style="zoom:75%;" />
 
