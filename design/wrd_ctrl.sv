@@ -1,4 +1,4 @@
-//RAMçš„è¯»å†™æ§åˆ¶å™¨ï¼šå½“æ¥æ”¶åˆ°commandè„‰å†²ä¹‹åå¯ä»¥åŒæ—¶è¿›è¡Œå¯¹RAMçš„è¯»å†™æ“ä½œ
+//RAMµÄ¶ÁĞ´¿ØÖÆÆ÷£ºµ±½ÓÊÕµ½commandÂö³åÖ®ºó¿ÉÒÔÍ¬Ê±½øĞĞ¶ÔRAMµÄ¶ÁĞ´²Ù×÷
 module wrd_ctrl #(
     parameter   ADDR_WIDTH  =   18      ,
     parameter   DATA_WIDTH  =   32      ,
@@ -80,7 +80,7 @@ module wrd_ctrl #(
     ) u_wr_ctrl (
         .clk            (clk                        ),
         .rst            (rst                        ),
-        .wr_command     (ram_manage.wr_command      ),       //è„‰å†²ä¿¡å·ï¼Œå¼€å§‹å†™å¸§æ•°æ®
+        .wr_command     (ram_manage.wr_command      ),       //Âö³åĞÅºÅ£¬¿ªÊ¼Ğ´Ö¡Êı¾İ
         .data_in        (data_in                    ),
         .data_in_valid  (data_in_valid              ),
         .wr_en          (wr_en                      ),

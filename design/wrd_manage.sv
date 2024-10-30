@@ -1,10 +1,10 @@
-//è¿™æ˜¯ä¹’ä¹“è¯»å†™çš„ç®¡ç†æ¨¡å—
-//æ ¹æ®å½“å‰RAMå—çŠ¶æ€åˆ†é…è¯»å†™è¯·æ±‚
+//ÕâÊÇÆ¹ÅÒ¶ÁĞ´µÄ¹ÜÀíÄ£¿é
+//¸ù¾İµ±Ç°RAM¿é×´Ì¬·ÖÅä¶ÁĞ´ÇëÇó
 module wrd_manage (
     input   logic           clk             ,
     input   logic           rst             ,
     input   logic           data_in_valid   ,
-    input   logic           frame_start     ,       //è„‰å†²ä¿¡å·ï¼Œè¡¨ç¤ºä¸€å¸§æ•°æ®çš„å¼€å§‹ï¼Œé«˜æœ‰æ•ˆ
+    input   logic           frame_start     ,       //Âö³åĞÅºÅ£¬±íÊ¾Ò»Ö¡Êı¾İµÄ¿ªÊ¼£¬¸ßÓĞĞ§
     ram_manage_if.m_manage  ram_manage
 );
 
@@ -41,7 +41,7 @@ module wrd_manage (
         end
     end
 
-    //å†™å¸§æ•°æ®çš„çŠ¶æ€æœºä»£ç 
+    //Ğ´Ö¡Êı¾İµÄ×´Ì¬»ú´úÂë
     always_comb begin
         case(wr_cur_state)
             WR_IDLE: begin
@@ -74,7 +74,7 @@ module wrd_manage (
         endcase
     end
 
-    //è¯»å¸§æ•°æ®çš„çŠ¶æ€æœºä»£ç 
+    //¶ÁÖ¡Êı¾İµÄ×´Ì¬»ú´úÂë
     always_comb begin
         case(rd_cur_state)
             RD_IDLE: begin

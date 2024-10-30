@@ -30,7 +30,7 @@ module matrix_trans_top_tb;
         #200
         rst = 0;
         @(posedge clk)
-        //å‘é€ä¸€å¸§æ•°æ®
+        //·¢ËÍÒ»Ö¡Êı¾İ
         repeat(5)
         begin
             gen_frame_data_1;
@@ -42,7 +42,7 @@ module matrix_trans_top_tb;
 
     task gen_frame_data_1; 
         s_axis_tvalid = 1'b0;
-        //äº§ç”Ÿæ•°æ®
+        //²úÉúÊı¾İ
         for (int i = 0; i < ROW ; i++) begin
             s_axis_tdata = 0;
             for (int j = 0; j < CLO ; j++) begin
@@ -55,7 +55,7 @@ module matrix_trans_top_tb;
     endtask
     task gen_frame_data_2; 
         s_axis_tvalid = 1'b0;
-        //äº§ç”Ÿæ•°æ®
+        //²úÉúÊı¾İ
         for (int i = 0; i < ROW ; i++) begin
             s_axis_tdata = 0;
             for (int j = CLO; j > 0 ; j--) begin

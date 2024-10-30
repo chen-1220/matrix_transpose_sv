@@ -1,4 +1,4 @@
-//RAMçš„å†™æ§åˆ¶å™¨ï¼šå½“æ¥æ”¶åˆ°wr_commandçš„è„‰å†²åï¼Œåœ¨ä¸‹ä¸ªæ—¶é’Ÿå¼€å§‹ä¾æ¬¡é¡ºåºçš„å†™å…¥ä¸€å¸§æ•°æ®
+//RAMµÄĞ´¿ØÖÆÆ÷£ºµ±½ÓÊÕµ½wr_commandµÄÂö³åºó£¬ÔÚÏÂ¸öÊ±ÖÓ¿ªÊ¼ÒÀ´ÎË³ĞòµÄĞ´ÈëÒ»Ö¡Êı¾İ
 module wr_ctrl #(
     parameter   ADDR_WIDTH  =   18,
     parameter   DATA_WIDTH  =   32,
@@ -7,13 +7,13 @@ module wr_ctrl #(
 )(
     input   logic                       clk             ,
     input   logic                       rst             ,
-    input   logic                       wr_command      ,       //è„‰å†²ä¿¡å·ï¼Œå¼€å§‹å†™å¸§æ•°æ®
+    input   logic                       wr_command      ,       //Âö³åĞÅºÅ£¬¿ªÊ¼Ğ´Ö¡Êı¾İ
     input   logic   [DATA_WIDTH-1:0]    data_in         ,
     input   logic                       data_in_valid   ,
     output  logic                       wr_en           ,
     output  logic   [ADDR_WIDTH-1:0]    wr_addr         ,
     output  logic   [DATA_WIDTH-1:0]    wr_data         ,
-    output  logic                       wr_finish           //æ ‡è¯†å½“å‰å†™æ“ä½œå®Œæˆ 
+    output  logic                       wr_finish           //±êÊ¶µ±Ç°Ğ´²Ù×÷Íê³É 
 );
     
     logic   wr_ctrl_en;
