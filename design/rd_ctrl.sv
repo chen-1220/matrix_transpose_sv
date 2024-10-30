@@ -1,4 +1,4 @@
-//RAM鐨勮鎺у埗鍣細褰撴帴鏀跺埌rd_command鐨勮剦鍐插悗锛屽湪涓嬩釜鏃堕挓寮�濮嬩緷娆℃寜鍒楄鍙栦竴甯х殑鏁版嵁
+//RAM的读控制器：当接收到rd_command的脉冲后，在下个时钟开始依次按列读取一帧的数据
 module rd_ctrl #(
     parameter   ADDR_WIDTH  =   18,
     parameter   DATA_WIDTH  =   32,
@@ -31,7 +31,7 @@ module rd_ctrl #(
     end
 
 
-    logic   [11:0]   clo_cnt;
+    logic   [$clog2(CLO)-1:0]   clo_cnt;
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
             rd_addr <=  '0;
